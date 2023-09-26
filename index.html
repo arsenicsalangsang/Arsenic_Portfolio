@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="" />
 
     <title>SALANGSANG_PORTFOLIO</title>
   </head>
 
   <body>
     <nav class="nav">
-      <div class="logo" id="first"><img src="./assets/poison.png" alt="" class="poi"> <h1>POISONOUS</h1></div>
+      <div class="logo">
+        <img src="./assets/poison.png" alt="" class="poi" />
+        <h1 class="left_name">POISONOUS</h1>
+      </div>
       <div>
         <ul class="links">
           <li><a href="#experience">About</a></li>
@@ -26,7 +29,7 @@
         </ul>
       </div>
     </nav>
-<!-- 
+    <!-- 
     <nav id="navigation_bar">
       <div class="logo">Arsenic Salangsang</div>
       <div class="navigation_menu">
@@ -38,78 +41,290 @@
         <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
       </div>
     -->
-      <section id="homepage">
-        <div class="mypic">
-          <img src="" alt="" />
+    <section id="homepage">
+      <div class="outer">
+        <div class="left">
+          <p>
+            NENIC NGA PALA NG TONDO
+            <!-- I AM ARSENIC SALANGSANG, 19 YEARS OLD FROM TONDO, MANILA. <br />
+            IM CURRENTLY 3RD YEAR AND TAKING INFORMATION SYSTEM <br />IN
+            TECHNOLOGICAL UNIVERSIT OF THE PHILIPPINES -->
+          </p>
         </div>
-      </section>
-    </nav>
+        <!-- For right side -->
+        <div class="right">
+          <div class="imagebox">
+            <img src="./assets/pic1.png" alt="" class="titopic" />
+          </div>
+
+          <!-- button -->
+          <div>
+            <div class="buttons">
+              <button
+                class="cv"
+                onclick="window.open('./assets/Salangsang_CV.pdf')"
+              >
+                CURRICULUM VITAE
+              </button>
+            </div>
+
+            <!-- icons -->
+
+            <div class="icon">
+              <button class="fb">
+                <img
+                  src="./assets/facebook.png"
+                  alt="fb"
+                  id="iconss"
+                  onclick="location.href='https://www.facebook.com/arsenicsalangsang/'"
+                />
+              </button>
+              <button class="twitter">
+                <img
+                  src="./assets/twitter.png"
+                  alt="twitter"
+                  id="iconss"
+                  onclick="location.href= 'https://twitter.com/arsncslngsng23'"
+                />
+              </button>
+              <button class="instagram">
+                <img
+                  src="/assets/instagram.png"
+                  alt="instagram"
+                  id="iconss"
+                  onclick="location.href='https://www.instagram.com/arsenicsalangsang/'"
+                />
+              </button>
+              <button class="linkedin">
+                <img
+                  src="/assets/linkedin.png"
+                  alt="linkedin"
+                  id="iconss"
+                  onclick="location.href='https://www.linkedin.com/in/arsenic-salangsang-407333290/'"
+                />
+              </button>
+              <button class="github">
+                <img
+                  src="assets/github.png"
+                  alt="gtihub"
+                  id="iconss"
+                  onclick="location.href='https://github.com/arsenicsalangsang'"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <!-- outer2 -->
+      <div class="outer2">
+        <!-- leftside picture-->
+        <div class="picture_2">
+          <img src="/assets/tech guild.jpg" alt="" id="picture2" />
+        </div>
+        <!--rightside about  -->
+        <div class="about1right">
+          <h1 class="aboutclass">ABOUT ME</h1>
+          <div class="imagevideo">
+            <img src="./assets/video-camera.png" alt="educ" />
+
+            <div class="tots">
+              <p>
+                I thoroughly enjoy both editing videos and enhancing <br />
+                pictures. Furthermore, I actively create content on <br />
+                YouTube and TikTok. My passion lies in crafting humorous
+                content, <br />
+                often focusing on various points of view.
+              </p>
+            </div>
+          </div>
+
+          <div class="imageclass">
+            <div class="imageduc">
+              <img src="./assets/graduation.png" alt="" />
+            </div>
+            <div class="tots2">
+              <p>
+                SENIOR HIGH SCHOOL <br />
+                Accountancy Business and Management <br />
+                Santa Isabel College of Manila <br />
+                (S.Y. 2019-2021)
+                <br /><br />
+
+                COLLEGE <br />
+                Bachelor of Science in Information System <br />
+                Technological University of the Philippines <br />
+                (S.Y 2021- Present)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="aaaaa">
+      <div class="outer3">
+        <div class="ooooo">fe</div>
+        <div class="iiii"></div>
+      </div>
+    </section> -->
+
+    <section id="SKILLS">
+      <div class="skillsection">
+        <div class="skillstitle">
+          <h1 class="skil">SKILLS</h1>
+          <div class="iconssss">
+            <h1 class="title1">PRORAMMING LANGUAGES & OTHER LANGUAGES</h1>
+            <div class="program">
+              <button class="c">
+                <img
+                  src="./assets/c.png"
+                  alt="fb"
+                  id="iconsss"
+                  
+                />
+              </button>
+              <button class="cpp">
+                <img
+                  src="./assets/c-.png"
+                  alt="twitter"
+                  id="iconsss"
+                  
+                />
+              </button>
+              <button class="python">
+                <img
+                  src="/assets/python.png"
+                  alt="instagram"
+                  id="iconsss"
+                
+                />
+              </button>
+              <button class="html">
+                <img
+                  src="/assets/html.png"
+                  alt="linkedin"
+                  id="iconsss"
+                 
+                />
+              </button>
+              <button class="css">
+                <img
+                  src="assets/css-3.png"
+                  alt="gtihub"
+                  id="iconsss"
+                 
+                />
+            </div>
+            <h1 class="EDITING">EDITING SOFTWARE</h1>
+            <div class="adobe">
+              
+
+              <button class="animate">
+                <img
+                  src="./assets/animate.png"
+                  alt="fb"
+                  id="iconsss"
+                
+                />
+              </button>
+              <button class="illustrator">
+                <img
+                  src="./assets/illustrator.png"
+                  alt="twitter"
+                  id="iconsss"
+                  
+                />
+              </button>
+              <button class="audition">
+                <img
+                  src="/assets/adobe-audition.png"
+                  alt="instagram"
+                  id="iconsss"
+             
+                />
+              </button>
+              <button class="premiere">
+                <img
+                  src="/assets/premiere-pro.png"
+                  alt="linkedin"
+                  id="iconsss"
+               
+                />
+              </button>
+              <button class="photoshop">
+                <img
+                  src="assets/photoshop.png"
+                  alt="gtihub"
+                  id="iconsss"
+          
+                />
+            </div>
+
+            
+            <h1 class="operating">OPERATING SYSTEM</h1>
+            <div class = "os">
+              
+              <button class="windows">
+                <img
+                  src="./assets/windows.png"
+                  alt="windows"
+                  id="iconsss"
+                
+                />
+              </button>
+              <button class="mac">
+                <img
+                  src="./assets/mac-os-logo.png"
+                  alt="mac"
+                  id="iconsss"
+                  
+                />
+              </button>
+              <button class="linux">
+                <img
+                  src="/assets/linux.png"
+                  alt="linux"
+                  id="iconsss"
+             
+                />
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- for projects -->
+    <section class= "projets">
+      <div class="PROJECTS">
+        <h1 class="proj">PROJECTS</h1>
+        <div class="projects"> 
+          <div class="typing">
+            <h1 class="tlab">TYPING LEGEND is an platform designed for typing tests or typing practice. <br> Typing tests and practice platforms are often used to improve <br> typing speed and accuracy. Users can take typing tests to measure their <br> words per minute (WPM) typing speed and practice typing to <br> become more proficient typists.</h1>
+            
+            <img src="./assets/typing.PNG" alt="">
+      
+          </div>
+          <div class="legends">
+            <h1></h1>
+            <img src="./assets/legends.PNG" alt="">
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <!-- EXPERIENCE -->
+    <section>
+
+    </section>
+
+  <!-- CONTACT -->
+    <section>
+
+    </section>
   </body>
 </html>
-
-
-
-
-
-
-<section>
-<!-- HOME SECTION -->
-    <div class ="home">
-        <!-- LEFT SIDE -->
-        <p class = "info">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Ab ipsa dolores at. Quas recusandae quisquam blanditiis autem, 
-            nemo molestiae numquam nam perspiciatis, exercitationem iste nisi. 
-            Unde quasi doloribus pariatur cupiditate!
-        </p>
-        <!-- RIGHT SIDE -->
-        <div>
-            <h1>PICTURE KO</h1>
-            <img src="" alt="">
-            <div>
-                <button>First</button>
-                <button>Second</button>
-            </div>
-            <div>
-                <button class = "firstbut">1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-            </div>
-        
-          </div>
-        <p>jj</p>
-          </div>
-</section>
-
-    <!-- about -->
-<div class></div>
-    <div class = "header">
-
-  <div class = "picture">
-
-  </div>
-
-  <div>
-    <p>
-
-    </p>
-  <div> 
-    <div class="firstbox">
-      <p>
-          <h1>
-            rogu
-          </h1>
-      </p>
-    </div>
-    
-    <div class = "second box">
-      <p>
-
-      </p>
-    </div>
-      </div>
-  </div>
-</div>
-</div>

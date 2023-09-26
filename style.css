@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Tourney:wght@200&display=swap");
+
 * {
   margin: 0;
   padding: 0%;
@@ -5,7 +11,8 @@
 }
 
 body {
-  background-color: bisque;
+  background-color: white;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -14,16 +21,28 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .links {
   display: flex;
   list-style-type: none;
+  font-size: 30px;
+
+  gap: 3rem;
+  padding-right: 100px;
+  justify-content: space-between;
 }
 
 .links li {
   margin-left: 1rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
 }
 
 .poi {
@@ -36,7 +55,584 @@ body {
   align-items: center;
 }
 
-.home,
-.info {
-  background-color: red;
+.left_name {
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
 }
+
+.outer {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  /* background-color: aqua; */
+  height: 858px;
+}
+
+.left {
+  /* display: flex;
+  justify-content: left; */
+  width: 50%;
+  /* height: 600px;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center; 
+   */
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+}
+
+.right {
+  display: flex;
+  width: 50%;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+
+  /* padding-right: 10%;   */
+  /* background-color: aquamarine; */
+  height: 100%;
+}
+
+.titopic {
+  width: 40%;
+  padding-top: -10px;
+  /* background-color: bisque; */
+  padding-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.buttons :hover {
+  background-color: black;
+  color: white;
+  transition: ease 0.4s;
+}
+
+.cv {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-family: "Oswald", sans-serif;
+}
+
+.imagebox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  /* background-color: blueviolet; */
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv {
+  cursor: pointer;
+}
+
+.fb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+}
+
+.fb img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.twitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.twitter img {
+  width: 40px;
+  height: 40px;
+}
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.instagram img {
+  width: 50px;
+  height: 50px;
+}
+
+.linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.linkedin img {
+  width: 50px;
+  height: 50px;
+}
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.github img {
+  width: 48px;
+  height: 48px;
+}
+.icon :hover {
+  background-color: gray;
+  color: grat;
+  transition: ease 0.4s;
+  border-radius: 30px;
+}
+
+#iconss {
+  padding: 10px;
+}
+
+.picture_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 100px;
+}
+
+/* for about second page */
+
+.outer2 {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+
+  height: 1000px;
+}
+.picture_2 img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50%;
+  height: 33%;
+  margin-right: 20px;
+  padding-right: 50px;
+}
+
+.picture_2 {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.about1right {
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutclass {
+  font-size: 100px;
+
+  font-family: "Sedgwick Ave Display", cursive;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.imagevideo img {
+  width: 70px;
+  height: 70px;
+}
+
+.imageclass img {
+  width: 70px;
+  height: 70px;
+}
+
+.imageclass {
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+}
+
+.tots {
+  font-family: "Oswald", sans-serif;
+  font-size: 28px;
+  padding-bottom: 50px;
+
+  border-radius: 30px;
+}
+
+.tots :hover {
+  background-color: black;
+  color: white;
+  transition: ease 0.4s;
+  border-radius: 100px;
+}
+
+.tots2 :hover {
+  background-color: black;
+  color: white;
+  transition: ease 0.4s;
+  border-radius: 100px;
+}
+
+/* outer 3 skills  */
+
+/* .outer3 {
+}
+
+.ooooo {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  text-align: end;
+  width: 100%;
+
+  height: 1000px;
+  font-size: 100px;
+}
+
+#aaaaa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+.skillsection {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 1000px;
+}
+
+.skillstitle {
+  width: 50%;
+  height: 500px;
+}
+
+.skillsnumber {
+  width: 50%;
+  height: 500px;
+}
+
+.skil {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  top: 1850px;
+  right: 6px;
+  position: absolute;
+  font-family: "Oswald", sans-serif;
+  font-size: 80px;
+}
+.skil :hover {
+  background-color: black;
+  color: aqua;
+  transition: ease 0.4s;
+  border-radius: 100px;
+}
+.title1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blanchedalmond; */
+  
+  font-size: 40px;
+  font-family: "Tourney", cursive;
+  padding-bottom: 20px;
+}
+.program {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.program img {
+  width: 100px;
+  height: 100px;
+  border: none;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+.c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+  padding-right: 100px;
+}
+
+.cpp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+  padding-right: 100px;
+}
+
+.python {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+  padding-right: 100px;
+}
+.html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+  padding-right: 100px;
+}
+.css {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.adobe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.adobe img {
+  width: 100px;
+  height: 100px;
+  border: none;
+  justify-content: center;
+}
+.EDITING {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blanchedalmond; */
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  font-family: "Tourney", cursive;
+  padding-bottom: 20px;
+}
+.animate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+  padding-right: 100px;
+}
+.illustrator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+  padding-right: 100px;
+}
+
+.audition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+  padding-right: 100px;
+}
+.premiere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+  padding-right: 100px;
+}
+.photoshop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.adobe img {
+  width: 100px;
+  height: 100px;
+  border: none;
+  justify-content: center;
+}
+
+.operating {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blanchedalmond; */
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  font-family: "Tourney", cursive;
+  padding-bottom: 20px;
+  padding-top: 80px;
+}
+.os {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+
+}
+
+.windows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+  padding-right: 100px;
+}
+.mac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+  padding-right: 100px;
+}
+
+.linux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid white;
+  cursor: pointer;
+  
+}
+
+.os img {
+ width: 100px;
+  height: 100px;
+  border: none;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+
+.PROJECTS
+{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 1000px;
+}
+
+.proj
+{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+top: 3050px;
+  font-family: "Oswald", sans-serif;
+  font-size: 80px;
+  
+  padding-bottom: 20px;
+
+}
+.leftproj
+{
+  width: 50%;
+  height: 500px;
+}
+
+.typing img
+{
+  width: 400px;
+  height: 400px;
+  padding-top: 800px;
+}
+.legends img
+{
+  width: 400px;
+  height: 400px;
+ padding-top: 100px;
+}
+.tlab
+{
+    font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  
+  position: absolute;
+  top: 3200px ;
+  right: 650px;
+ 
+}
+
