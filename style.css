@@ -379,7 +379,7 @@ body {
   justify-content: center;
   align-items: center;
   /* background-color: blanchedalmond; */
-  
+
   font-size: 40px;
   font-family: "Tourney", cursive;
   padding-bottom: 20px;
@@ -459,6 +459,7 @@ body {
   height: 100px;
   border: none;
   justify-content: center;
+  cursor: pointer;
 }
 .EDITING {
   display: flex;
@@ -543,7 +544,6 @@ body {
   background: none;
   border: 1px solid white;
   cursor: pointer;
-
 }
 
 .windows {
@@ -555,6 +555,8 @@ body {
   cursor: pointer;
   padding-right: 100px;
 }
+
+
 .mac {
   display: flex;
   justify-content: center;
@@ -572,19 +574,17 @@ body {
   background: none;
   border: 1px solid white;
   cursor: pointer;
-  
 }
 
 .os img {
- width: 100px;
+  width: 100px;
   height: 100px;
   border: none;
   justify-content: center;
   padding-bottom: 70px;
 }
 
-.PROJECTS
-{
+.PROJECTS {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -593,46 +593,104 @@ body {
   height: 1000px;
 }
 
-.proj
-{
+.proj {
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   position: absolute;
-top: 3050px;
+  top: 3050px;
   font-family: "Oswald", sans-serif;
   font-size: 80px;
-  
-  padding-bottom: 20px;
 
+  padding-bottom: 20px;
 }
-.leftproj
-{
+.leftproj {
   width: 50%;
   height: 500px;
 }
 
-.typing img
-{
+.typing img {
   width: 400px;
   height: 400px;
   padding-top: 800px;
 }
-.legends img
-{
+.legends img {
   width: 400px;
   height: 400px;
- padding-top: 100px;
+  padding-top: 100px;
 }
-.tlab
-{
-    font-family: "Oswald", sans-serif;
+.tlab {
+  font-family: "Oswald", sans-serif;
   font-size: 20px;
-  
+
   position: absolute;
-  top: 3200px ;
+  top: 3200px;
   right: 650px;
- 
 }
 
+.PROJECTS {
+  padding-top: 200px;
+}
+
+.aaa {
+  display: flex;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  justify-content: center;
+    align-items: center;
+  font-size: 70px;
+  padding-bottom: 40%;
+  padding-left: 66%;
+}
+
+.projects-container
+{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.leftside img {
+  width: 600px;
+  height: 500px;
+  padding-right:280%;
+}
+.leftside
+{
+    display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.PROJECTS {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.rightside2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.rightside2 img {
+  width: 600px;
+  height: 500px;
+  padding-right: 400%;
+}
+
+.rightside {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
