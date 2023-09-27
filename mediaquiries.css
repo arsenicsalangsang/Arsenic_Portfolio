@@ -1,0 +1,47 @@
+@media screen and (max-width: 1400px) {
+  #homepage {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about1right {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .nav {
+    display: none;
+  }
+  #Experience,
+  .experience-container {
+    margin-top: 2rem;
+  }
+
+  #homepage,
+  .outer {
+    display: block;
+  }
+
+  .outer {
+    height: fit-content;
+  }
+
+  .section {
+    margin: 0 5%;
+  }
+  .imagebox {
+    width: 275px;
+    height: 275px;
+  }
+  .about1right
+  margin-top: 0;{
+
+
+  }
+}
+
+@media screen and (max-width:600px)
+{
+#contact,
+
+}

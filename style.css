@@ -956,3 +956,12 @@ input[type="submit"]:hover {
 .emailcontact {
   font-size: 10px;
 }
+
+
+footer p
+{
+  text-align: center;
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+}
+
