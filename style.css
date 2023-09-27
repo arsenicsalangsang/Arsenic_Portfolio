@@ -4,10 +4,20 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Tourney:wght@200&display=swap");
 
+
+  @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@800&display=swap');
+
 * {
   margin: 0;
   padding: 0%;
   text-decoration: none;
+}
+
+html
+{
+  scroll-behavior: smooth;
+
+  transition: ease 0.4s;
 }
 
 body {
@@ -342,6 +352,7 @@ body {
   align-items: center;
   width: 100%;
   height: 1000px;
+  padding-top: 100px;
 }
 
 .skillstitle {
@@ -360,12 +371,11 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 500px;
-  top: 1850px;
-  right: 6px;
+
   position: absolute;
   font-family: "Oswald", sans-serif;
   font-size: 80px;
+  padding-bottom: 700px;
 }
 .skil :hover {
   background-color: black;
@@ -556,7 +566,6 @@ body {
   padding-right: 100px;
 }
 
-
 .mac {
   display: flex;
   justify-content: center;
@@ -591,6 +600,11 @@ body {
   align-items: center;
   width: 100%;
   height: 1000px;
+ 
+}
+.projets
+{
+  padding-bottom: 200px;
 }
 
 .proj {
@@ -638,14 +652,13 @@ body {
   text-align: center;
   font-family: "Oswald", sans-serif;
   justify-content: center;
-    align-items: center;
+  align-items: center;
   font-size: 70px;
   padding-bottom: 40%;
   padding-left: 66%;
 }
 
-.projects-container
-{
+.projects-container {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -656,11 +669,10 @@ body {
 .leftside img {
   width: 600px;
   height: 500px;
-  padding-right:280%;
+  padding-right: 280%;
 }
-.leftside
-{
-    display: flex;
+.leftside {
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -693,4 +705,197 @@ body {
   justify-content: center;
   align-items: center;
   width: 50%;
+}
+
+.EXPERIENCE h1{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-size: 50px;
+  padding-top: 20px;
+}
+.exph1{
+   padding-top:   10px;
+}
+
+.experience-container h1
+{
+  font-size: 50px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.experience-container{
+  width: 100%;
+height: 900px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.exp1{
+  width: 33%;
+
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+
+} 
+.exp2
+{
+  text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+  width: 33%;
+
+}
+.exp3
+{
+    text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+  width: 33%;
+
+
+
+}
+
+.bttitle
+{
+  font-family: 'Tourney';
+}
+
+.tgtitle
+{
+font-family: 'Tourney';
+}
+
+.csctitle
+{
+font-family: 'Tourney';
+}
+.BOLTUP h2
+{
+  font-family: 'Unbounded', sans-serif;
+}
+
+.TG h2
+{
+  font-family: 'Unbounded', sans-serif;
+}
+
+.CSC h2
+{
+  font-family: 'Unbounded', sans-serif;
+}
+
+.experience-container h3
+{
+  font-family: "Oswald", sans-serif;
+}
+.experience-container :hover
+{
+    background-color: black;
+  color: white;
+  transition: ease 0.4s;
+  border-radius: 80px;
+}
+
+.exph1{
+  font-family: 'Unbounded', sans-serif;
+
+}
+
+
+.CONTACTS
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+padding-bottom: 200px;
+}
+
+/* Apply some basic styling to the form container */
+form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+/* Style the form header (Contact Us) */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Style form labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Style form input fields and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Change button color on hover */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.CONTACTS h1
+{
+  font-family: 'Unbounded', sans-serif;
+  font-size: 80px;
+}
+ .CONTACTS p
+ {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+ }
+ .contactinfo
+ {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+ }
+
+ .gmail
+ {
+  padding-top: 70px;
+  height: 50px;
+  width: 50px;
+ }
+
+.emailcontact
+{
+  font-size: 10px;
+
 }

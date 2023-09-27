@@ -17,30 +17,29 @@
       </div>
       <div>
         <ul class="links">
-          <li><a href="#experience">About</a></li>
-
-          <li><a href="skills">Projects</a></li>
-
-          <li><a href="projects">Skills</a></li>
-
-          <li><a href="#contact">Experience</a></li>
-
-          <li><a href="#Contacts">Contacts</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#SKILLS" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
         </ul>
       </div>
     </nav>
-    <!-- 
+    
     <nav id="navigation_bar">
-      <div class="logo">Arsenic Salangsang</div>
-      <div class="navigation_menu">
+      <!-- <div class="logo">Arsenic Salangsang</div>
+      <div class="hamburger-menu"onclick="toggleMenu()">
+       <div class="navigation_menu">
         <div class="navigation_icon" onclick="togglemenu()"></div>
-        <li><a href="#About" onclick="toggleMenu()">About</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
         <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="skills" onclick="toggleMenu()">Skills</a></li>
-        <li><a href="Experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#SKILLS" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
         <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+        </div> -->
       </div>
-    -->
+   </nav>
+
     <section id="homepage">
       <div class="outer">
         <div class="left">
@@ -164,17 +163,11 @@
       </div>
     </section>
 
-    <!-- <section id="aaaaa">
-      <div class="outer3">
-        <div class="ooooo">fe</div>
-        <div class="iiii"></div>
-      </div>
-    </section> -->
-
     <section id="SKILLS">
       <div class="skillsection">
+        <h1 class="skil">SKILLS</h1>
         <div class="skillstitle">
-          <h1 class="skil">SKILLS</h1>
+          
           <div class="iconssss">
             <h1 class="title1">PRORAMMING LANGUAGES & OTHER LANGUAGES</h1>
             <div class="program">
@@ -298,7 +291,7 @@
     </section>
 
     <!-- for projects -->
-    <section class= "projets">
+    <section class= "projets" id="projects">
       <div class="PROJECTS">
         <h1 class="aaa">PROJECTS</h1>
         <div class="projects-container">
@@ -318,33 +311,53 @@
     </section>
 
 
-
-
-
     <!-- EXPERIENCE -->
-    <section>
-
+    <section class="EXPERIENCE" id="Experience">
+        <h1 class="exph1">EXPERIENCE</h1> 
+      <div class= "experience-container">
+  
+        <div class="exp1">
+          <div class="BOLTUP">
+            <h1 class="bttitle">TECHNICAL DIRECTOR</h1><br><h2>BOLUNTARYONG TUPIANS</h2><BR></BR> <h3>2023-PRESENT</h3>
+          </div>
+        </div>
+        <div class="exp2">
+          <div class="TG">
+            <h1 class="tgtitle">TECH OPS MANAGER</h1><br><h2>TUP TECH GUILD</h2><BR></BR> <h3>2023-PRESENT</h3>
+          </div>
+        </div>
+        <div class="exp3">
+          <div class="CSC">
+            <h1 class="csctitle">TECHNICAL COMMITTEE</h1><br><h2>COS-CSC</h2><BR></BR> <h3>2023-PRESENT</h3>
+          </div>
+         
+        </div>
+      </div>
+      
     </section>
 
   <!-- CONTACT -->
-    <section>
+    <section class="CONTACTS" id="contact">
+      <div>
+        <h1>CONTACT ME</h1> <br>
+        <p>FILL UP BELOW FOR INQUIRING</p>
+        <br>
+        <label for="name" class="contactinfo">Name:</label>
+         <input type="text" id="name"  ><br><br>
 
+        <label for="email"class="contactinfo">Email:</label>
+          <input type="email" id="email"  ><br><br>
+
+         <label for="message"class="contactinfo">Message:</label><br>
+        <textarea id="message" rows="4" cols="50" ></textarea><br><br>
+
+         <input type="submit" value="Submit">
+        <div class="emailcontact">
+          <img src="./assets/gmail.png" alt="" class="gmail"> <p class="">@arsenicsalangsang23@gmail.com</p>
+        </div>
+      </div>
+
+      
     </section>
   </body>
 </html>
-      <!-- <div class="PROJECTS">
-        <h1 class="proj">PROJECTS</h1>
-        <div class="projects"> 
-          <div class="typing">
-            <h1 class="tlab">TYPING LEGEND is an platform designed for typing tests or typing practice. <br> Typing tests and practice platforms are often used to improve <br> typing speed and accuracy. Users can take typing tests to measure their <br> words per minute (WPM) typing speed and practice typing to <br> become more proficient typists.</h1>
-            
-            <img src="./assets/typing.PNG" alt="">
-      
-          </div>
-          <div class="legends">
-            <h1></h1>
-            <img src="./assets/legends.PNG" alt="">
-          </div>
-        </div>
-
-      </div> -->
