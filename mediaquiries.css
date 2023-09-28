@@ -6,6 +6,14 @@
   .about1right {
     flex-wrap: wrap;
   }
+  .imagebox img {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .outer {
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -32,16 +40,23 @@
   .imagebox {
     width: 275px;
     height: 275px;
+    margin: 0 auto 2rem;
   }
-  .about1right
-  margin-top: 0;{
-
-
+  .about1right {
+    margin-top: 0;
   }
 }
 
-@media screen and (max-width:600px)
-{
-#contact,
-
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about1right {
+    flex-wrap: wrap;
+  }
 }
