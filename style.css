@@ -8,907 +8,439 @@
 
 * {
   margin: 0;
-  padding: 0%;
+  padding: 0;
   text-decoration: none;
 }
 
 html {
   scroll-behavior: smooth;
-
-  transition: ease 0.4s;
 }
 
 body {
   background-color: white;
-  overflow-x: hidden;
 }
 
-.nav {
-  background-color: gray;
+#homepage {
+  font-family: Oswald;
+}
 
+/* Navigation Bar */
+
+#poisonous {
+  height: 40px;
+}
+
+nav,
+.logo,
+.nav-links {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  background-color: pink;
+  font-family: Oswald;
 }
 
-.links {
+.logo h1 {
+  font-size: 50px;
+}
+nav {
+  justify-content: space-around;
+  height: 10vh;
+  margin-bottom: 0.5in;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: black;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* Hamburger Nav */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
   display: flex;
-  list-style-type: none;
-  font-size: 30px;
-
-  gap: 3rem;
-  padding-right: 100px;
+  flex-direction: column;
   justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
 }
 
-.links li {
-  margin-left: 1rem;
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon.open span:first-child {
+  transform: none;
+}
+
+.hamburger-icon.open span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: none;
+}
+
+/* Homepage */
+
+#homepage {
+  margin-top: 1.25in;
+  margin-bottom: 1.25in;
 }
 
 .left h3 {
   font-size: 50px;
 }
+
 .left h1 {
   font-size: 70px;
 }
+
 .left p {
-  font-size: 35px;
+  font-size: 40px;
 }
 
-.left {
-  padding-left: 200px;
-}
-
-.links :hover {
-  color: black;
-  transition: ease 0.4s;
-  padding: 20px 20px;
-}
-
-.left :hover {
-  color: black;
-  transition: ease 0.4s;
-  padding: 50px 50px;
-}
-
-.buttons :hover {
-  color: black;
-  transition: ease 0.4s;
-  padding: 50px 50px;
-  font-size: 30px;
-}
-
-.links a {
-  text-decoration: none;
-  color: black;
-  font-family: "Oswald", sans-serif;
-  font-size: 25px;
-}
-
-.poi {
-  width: 10%;
-  margin-right: 1rem;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.left_name {
-  font-size: 30px;
-  font-family: "Oswald", sans-serif;
-}
-
-.outer {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-
-  height: 858px;
-}
-
-.left {
-
-  width: 50%;
-
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 28px;
-}
-
-.right {
-  display: flex;
-  width: 50%;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
-
-
-  height: 100%;
-}
-
-.titopic {
-  width: 40%;
-  padding-top: -10px;
-
-  padding-left: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.titopic :hover {
-  transform: scale(1.3);
-  z-index: 2;
-}
-
-.logo img {
-  transform: scale(1.3);
-  z-index: 2;
-}
-
-.buttons {
-  margin: 20px 0;
-  justify-content: center;
-  align-items: center;
-  padding-left: 100px;
-}
-
-.buttons :hover {
-  background-color: black;
-  color: white;
-  transition: ease 0.4s;
-}
-
-.cv {
-  padding: 10px 20px;
-  border-radius: 30px;
-  font-family: "Oswald", sans-serif;
-}
-
-.imagebox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 2rem;
-  padding-top: 1rem;
-
-}
-
-.icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon :hover {
-  color: black;
-  transition: ease 0.4s;
-  padding: 10px 10px;
-}
-
-.cv {
-  cursor: pointer;
-}
-
-.fb {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-}
-
-.fb img {
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-
-.twitter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-}
-
-.twitter img {
-  width: 40px;
-  height: 40px;
-}
-
-.instagram {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-}
-
-.instagram img {
-  width: 50px;
-  height: 50px;
-}
-
-.linkedin {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-}
-.linkedin img {
-  width: 50px;
-  height: 50px;
-}
-.github {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-}
-
-.github img {
-  width: 48px;
-  height: 48px;
-}
-.icon :hover {
-  background-color: gray;
-  color: grat;
-  transition: ease 0.4s;
-  border-radius: 30px;
+#titopic {
+  height: 400px;
+  padding-left: 50px;
 }
 
 #iconss {
-  padding: 10px;
+  height: 40px;
+  cursor: pointer;
 }
 
-.picture_2 {
+.outer {
+  height: 750px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding-right: 100px;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
-/* for about second page */
+.buttons {
+  padding: 10px 30px;
+  font-family: Oswald;
+}
+
+.icon {
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 90px;
+}
+
+.icon :hover {
+  transition-duration: 0.4s;
+}
+
+#cv {
+  background-color: white;
+  border-style: double;
+  border-radius: 10px;
+  padding: 10px 10px;
+  border-color: black;
+  transition-duration: 0.4s;
+  font-family: Oswald;
+}
+
+.buttons :hover {
+  transition-duration: 0.4s;
+  color: pink;
+  background-color: pink;
+  font-family: Oswald;
+}
+
+/* About */
+
+#picture1 {
+  height: 450px;
+}
+
+#picture2 {
+  height: 350px;
+}
+
+#signs {
+  height: 75px;
+}
+
+#about {
+  margin-top: 1.25in;
+  margin-bottom: 1.25in;
+}
 
 .outer2 {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-
   height: 1000px;
-}
-
-.picture_2 img {
   display: flex;
   align-items: center;
-  justify-content: center;
-
-  width: 20%;
-  height: 33%;
-}
-.picture_2 :hover {
-  color: black;
-  transition: ease 0.4s;
-  padding: 100px 100px;
-}
-
-.orange img {
-  width: 100%;
-  height: 33%;
-}
-
-.adidas img {
-  width: 100%;
-  height: 33%;
-}
-
-.picture_2 {
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.about1right {
-  width: 50%;
+  justify-content: space-around;
   text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.aboutclass {
-  font-size: 100px;
-
-  font-family: "Sedgwick Ave Display", cursive;
-  text-align: center;
-  width: 100%;
-  padding-bottom: 100px;
-  padding-top: 100px;
-}
-
-.imagevideo img {
-  width: 70px;
-  height: 70px;
-}
-
-.imageclass img {
-  width: 70px;
-  height: 70px;
-}
-
-.imageclass {
-  font-family: "Oswald", sans-serif;
-  font-size: 28px;
 }
 
 .tots {
-  font-family: "Oswald", sans-serif;
-  font-size: 28px;
-  padding-bottom: 50px;
-
-  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Oswald;
+  font-size: 30px;
 }
 
-.tots :hover {
-  background-color: black;
-  color: white;
-  transition: ease 0.4s;
-  border-radius: 100px;
+.about1right h1 {
+  font-size: 50px;
+  font-family: Unbounded;
 }
 
-.tots2 :hover {
-  background-color: black;
-  color: white;
-  transition: ease 0.4s;
-  border-radius: 100px;
+/* Skills */
+
+#iconsss {
+  height: 150px;
 }
 
-/* outer 3 skills  */
+#skills {
+  margin-top: 1.25in;
+  margin-bottom: 1.25in;
+}
 
-
-.skillsection {
+.skill {
+  height: 750px;
   display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 1000px;
-  padding-top: 100px;
 }
 
-.skillstitle {
-  width: 50%;
-  height: 500px;
-}
-
-.skillsnumber {
-  width: 50%;
-  height: 500px;
-}
-
-.skil {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-
-  position: absolute;
-  font-family: "Oswald", sans-serif;
-  font-size: 80px;
-  padding-bottom: 700px;
-}
-.skil :hover {
-  background-color: black;
-  color: aqua;
-  transition: ease 0.4s;
-  border-radius: 100px;
-}
-.title1 {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  /* background-color: blanchedalmond; */
-
-  font-size: 40px;
-  font-family: "Tourney", cursive;
-  padding-bottom: 20px;
-}
-.program {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-}
-
-.program img {
-  width: 100px;
-  height: 100px;
-  border: none;
-  justify-content: center;
-  padding-bottom: 70px;
-}
-.c {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-  padding-right: 100px;
-}
-
-.cpp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-  padding-right: 100px;
-}
-
-.python {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-  padding-right: 100px;
-}
-.html {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-  padding-right: 100px;
-}
-.css {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-}
-
-.adobe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-}
-.adobe img {
-  width: 100px;
-  height: 100px;
-  border: none;
-  justify-content: center;
-  cursor: pointer;
-}
-.EDITING {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  /* background-color: blanchedalmond; */
-  font-family: "Oswald", sans-serif;
-  font-size: 40px;
-  font-family: "Tourney", cursive;
-  padding-bottom: 20px;
-}
-.animate {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-  padding-right: 100px;
-}
-.illustrator {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-  padding-right: 100px;
-}
-
-.audition {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-  padding-right: 100px;
-}
-.premiere {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-  padding-right: 100px;
-}
-.photoshop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-}
-
-.adobe img {
-  width: 100px;
-  height: 100px;
-  border: none;
-  justify-content: center;
-}
-
-.operating {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  /* background-color: blanchedalmond; */
-  font-family: "Oswald", sans-serif;
-  font-size: 40px;
-  font-family: "Tourney", cursive;
-  padding-bottom: 20px;
-  padding-top: 80px;
-}
-.os {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-}
-
-.windows {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-  padding-right: 100px;
-}
-
-.mac {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-  padding-right: 100px;
-}
-
-.linux {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  border: 1px solid white;
-  cursor: pointer;
-}
-
-.os img {
-  width: 100px;
-  height: 100px;
-  border: none;
-  justify-content: center;
-  padding-bottom: 70px;
-}
-
-.PROJECTS {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 1000px;
-}
-.projets {
-  padding-bottom: 200px;
-}
-
-.proj {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 3050px;
-  font-family: "Oswald", sans-serif;
-  font-size: 80px;
-
-  padding-bottom: 20px;
-}
-.leftproj {
-  width: 50%;
-  height: 500px;
-}
-
-.typing img {
-  width: 400px;
-  height: 400px;
-  padding-top: 800px;
-}
-.legends img {
-  width: 400px;
-  height: 400px;
-  padding-top: 100px;
-}
-.tlab {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-
-  position: absolute;
-  top: 3200px;
-  right: 650px;
-}
-
-.PROJECTS {
-  padding-top: 200px;
-}
-
-.aaa {
-  display: flex;
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-  justify-content: center;
-  align-items: center;
+.skill h1 {
   font-size: 70px;
-  padding-bottom: 40%;
-  padding-left: 66%;
+  margin-bottom: 0.25in;
 }
 
-.projects-container {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
+.skillsection h1 {
+  font-size: 25px;
 }
 
-.leftside img {
-  width: 600px;
-  height: 500px;
-  padding-right: 280%;
-}
-.leftside {
+#PLOL,
+#ES,
+#OS {
   display: flex;
-  text-align: center;
   justify-content: center;
-  align-items: center;
+  gap: 0.25in;
+  margin-top: 0.2in;
+  margin-bottom: 0.2in;
+}
+
+/* Projects */
+
+#projpic {
+  height: 450px;
+}
+
+#projects {
+  margin-top: 1.25in;
+  margin-bottom: 1.25in;
 }
 
 .PROJECTS {
-  display: flex;
+  height: 750px;
   text-align: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.rightside2 {
   display: flex;
-  text-align: center;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  width: 50%;
+  justify-content: center;
 }
 
-.rightside2 img {
-  width: 600px;
+.PROJECTS h1 {
+  font-size: 50px;
+  margin-top: 0.25in;
+  margin-bottom: 0.25in;
+}
+
+.projectscontainer {
+  display: flex;
+  gap: 0.75in;
+}
+
+/* Experience */
+
+#Experience {
+  margin-top: 1.25in;
+  margin-bottom: 1.25in;
+}
+
+.EXPCONTAINER {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.containerexp h1 {
+  font-size: 50px;
+  font-family: Oswald;
+}
+
+.experiencecontainer {
+  display: flex;
+  text-align: center;
+  gap: 1.5in;
+}
+
+.expcont {
+  border-style: solid;
+  height: 200px;
+  width: 300px;
+  display: grid;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0px 10px;
+}
+
+.expcont h1 {
+  font-size: 30px;
+  font-family: Tourney;
+}
+
+.expcont h2 {
+  font-size: 20px;
+  font-family: unbounded;
+}
+
+.expcont h3 {
+  font-size: 15px;
+  font-family: unbounded;
+}
+
+/* Contact */
+
+#gmail {
+  height: 50px;
+}
+
+#contact {
+  margin-top: 1.25in;
+  margin-bottom: 1.25in;
+}
+
+.CONT {
   height: 500px;
-  padding-right: 400%;
-}
-
-.rightside {
-  display: flex;
-  text-align: center;
+  display: grid;
   justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-
-.EXPERIENCE h1 {
-  align-items: center;
   text-align: center;
-  justify-content: center;
-  display: flex;
-  font-size: 50px;
-  padding-top: 20px;
-}
-.exph1 {
-  padding-top: 10px;
+  font-family: Oswald;
 }
 
-.experience-container h1 {
-  font-size: 50px;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  padding-bottom: 20px;
-}
-
-.experience-container {
-  width: 100%;
-  height: 900px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.exp1 {
-  width: 33%;
-
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.exp2 {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 33%;
-}
-.exp3 {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 33%;
-}
-
-.bttitle {
-  font-family: "Tourney";
-}
-
-.tgtitle {
-  font-family: "Tourney";
-}
-
-.csctitle {
-  font-family: "Tourney";
-}
-.BOLTUP h2 {
-  font-family: "Unbounded", sans-serif;
-}
-
-.TG h2 {
-  font-family: "Unbounded", sans-serif;
-}
-
-.CSC h2 {
-  font-family: "Unbounded", sans-serif;
-}
-
-.experience-container h3 {
-  font-family: "Oswald", sans-serif;
-}
-.experience-container :hover {
-  background-color: black;
-  color: white;
-  transition: ease 0.4s;
-  border-radius: 80px;
-}
-
-.exph1 {
-  font-family: "Unbounded", sans-serif;
-}
-
-.CONTACTS {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  padding-bottom: 200px;
-}
-
-/* Apply some basic styling to the form container */
-form {
-  width: 400px;
-  margin: 0 auto;
-}
-
-/* Style the form header (Contact Us) */
-h1 {
-  text-align: center;
-  color: #333;
-}
-
-/* Style form labels */
-label {
-  display: block;
-  font-weight: bold;
-  margin-top: 10px;
-  color: #555;
-}
-
-/* Style form input fields and textarea */
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 90%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* Style the submit button */
-input[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-/* Change button color on hover */
-input[type="submit"]:hover {
-  background-color: #0056b3;
-}
-
-.CONTACTS h1 {
-  font-family: "Unbounded", sans-serif;
+.CONT h1 {
   font-size: 80px;
 }
-.CONTACTS p {
-  font-family: "Oswald", sans-serif;
-  font-size: 40px;
+
+.CONT p {
+  font-size: 30px;
 }
+.emailcontact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  padding: 10px;
+  font-size: 20px;
+  font-family: Oswald;
+  display: flex;
+  justify-content: center;
+  background-color: pink;
+}
+
 .contactinfo {
-  font-family: "Oswald", sans-serif;
+  font-family: Oswald;
   font-size: 20px;
 }
 
-.gmail {
-  padding-top: 70px;
-  height: 50px;
-  width: 50px;
+#textbox {
+  padding: 10px;
+}
+
+#sub {
+  border-radius: 30px;
+  background-color: white;
+  font-size: 20px;
+  padding: 10px 0px;
 }
 
 .emailcontact {
-  font-size: 10px;
-}
-
-footer p {
-  text-align: center;
-  font-size: 30px;
-  font-family: "Oswald", sans-serif;
+  padding-top: 10px;
 }
